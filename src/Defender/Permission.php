@@ -10,4 +10,6 @@ use Illuminate\Database\Eloquent\Model;
 class Permission extends Model implements Contracts\Permission
 {
     use Traits\Models\Permission;
+
+    protected $connection = 'mysql-users';
 }
